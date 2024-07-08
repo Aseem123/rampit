@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/home.css">
     <title>Ramp-IT</title>
 </head>
 <body>
 
-    <section class="main-container">
+    <section class="main-container fullscreen" id="home">
         <header class="header">
             <div class="left-header">
-                <a href="#home.html" id="ramp-it">RAMP-IT</a>
+                <a href="#home" id="ramp-it">RAMP-IT</a>
             </div>
             <div class="right-header">
-                <a href="#service-container">Service</a>
-                <a href="#about.html">About</a>
-                <a href="#contact.html">Contact</a>
+                <a href="#service">Service</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </header>
         <div class="content-container">
@@ -29,7 +30,7 @@
             </div>
         </div>
     </section>
-    <section id="service-container">
+    <section id="service" class="service-container fullscreen">
         <div class="center-container">
             <div class="service-content-container">
                 <div class="texts">
@@ -50,7 +51,7 @@
             <img src="../images/welcome-image.jpg" alt="random-img">
         </div>
     </section>
-    <section class="about-container">
+    <section id='about' class="about-container fullscreen">
         <div class="image-container">
             <img src="../images/welcome-image.jpg" alt="random-img">
         </div>
@@ -71,24 +72,46 @@
             </div>
         </div>
     </section>
-    <section class="contact-container">
-        <div class="center-container">
-            <div class="service-content-container">
+    <section class="contact-container fullscreen" id="contact">
+        <div class="contact-center-container">
+            <div class="contact-content-container">
                 <div class="texts">
-                    <h1>Get In Touch</h1>
-                    <p>Discover how we can simplify your IT needs. Let our experts take care of everything. Don't hesitate to contact us!</p>
+                    <h3>Get In Touch</h3>
+                    <!-- <p>Discover how we can simplify your IT needs. Let our experts take care of everything. Don't hesitate to contact us!</p> -->
                 </div>
-                <form action="post">
-                    <label for="name">Name<span>*</span></label>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname name" name="firstname" placeholder="e.g John">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="e.g Cena">
+                <form method="post">
+                    <div class="col-md-6">
+                        <input type="text" name="Name" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea name="message" id="message" placeholder="Message" row='5' cols="50" required></textarea>
+                    </div>
+                    <input type="submit" name="button">
                 </form>
             </div>
-        </div>
-        <div class="image-container">
-            <img src="../images/welcome-image.jpg" alt="random-img">
+            <div class="business-details">
+                <div class="details">
+                    <h3>Contact us</h3>
+                    <div class="address flex">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p><strong>Address:</strong> 104 Argyll Stree, Malvern East, VIC, 3145</p>
+                    </div>
+                    <div class="phone flex">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p><strong>Phone:</strong> 0450633012</p>
+                    </div>
+                    <div class="email flex">
+                        <span><i class="fa-brands fa-telegram"></i></span>
+                        <p><strong>Email:</strong> rampit.admin@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
